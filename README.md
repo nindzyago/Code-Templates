@@ -9,14 +9,14 @@ This project contains the edited [Moxy](https://github.com/Arello-Mobile/Moxy/tr
 
 
 
-Select:
-![](https://github.com/NoNews/CodeGeneration/blob/master/images/select.jpg "Select")
+####Select:
+![](https://github.com/NoNews/CodeGeneration/blob/master/images/select.png "Select")
 
-Activity:
+####Activity:
 ![](https://github.com/NoNews/CodeGeneration/blob/master/images/activity.jpg "Activity")
 
-Fragment:
+####Fragment:
 ![](https://github.com/NoNews/CodeGeneration/blob/master/images/fragment.jpg "Fragment")
 
-RecyclerView Adapter:
+####RecyclerView Adapter:
 ![](https://github.com/NoNews/CodeGeneration/blob/master/images/adapter.jpg "RecyclerView adapter")
