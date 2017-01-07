@@ -2,8 +2,8 @@
 <template
     format="4"
     revision="1"
-    name="RecyclerView Adapter constructor"
-    description="Adapter and ViewHolder template"
+    name="RecyclerView Adapter"
+    description="Adapter and ViewHolder constructor"
     minApi="7"
     minBuildApi="14">
 

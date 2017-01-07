@@ -8,5 +8,3 @@ This project contains the edited [Moxy](https://github.com/Arello-Mobile/Moxy/tr
 3. Restart Android Studio.
 
 
-
-
