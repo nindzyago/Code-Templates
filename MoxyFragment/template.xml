@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<template
+    name="Moxy fragment"
+    description="Moxy MVP fragment constructor"
+    format="4"
+    minApi="7"
+    minBuildApi="8"
+    revision="1">
+
+    <category value="Moxy"/>
+
+    <dependency name="android-support-v4" revision="8"/>
+
+    <parameter
+        name="Fragment Name"
+        constraints="class|nonempty|unique"
+        default="BlankFragment"
+        help="The name of the fragment class to create"
+        id="className"
+        type="string"/>
+
+    <parameter
+        name="Use sub package?"
+        default="false"
+        help="Add generated classes to specified package"
+        id="useSubPackage"
+        type="boolean"
+        visibility="false"/>
+
+    <parameter
+        name="Package name"
+        default="blank"
+        help="Package name"
+        id="subPackage"
+        type="string"
+        visibility="useSubPackage"/>
+
+    <parameter
+        name="Create layout XML?"
+        default="true"
+        help="Generate a layout XML for the fragment"
+        id="includeLayout"
+        type="boolean"/>
+
+    <parameter
+        name="Create View?"
+        default="true"
+        help="Generate a view for the fragment"
+        id="includeView"
+        type="boolean"/>
+
+    <parameter
+        name="Create Presenter?"
+        default="true"
+        help="Generate a presenter for the fragment"
+        id="includePresenter"
+        type="boolean"/>
+
+    <parameter
+        name="Fragment Layout Name"
+        constraints="layout|nonempty|unique"
+        default="fragment_blank"
+        help="The name of the layout to create"
+        id="fragmentName"
+        suggest="fragment_${classToResource(className)}"
+        type="string"
+        visibility="includeLayout"/>
+
+    <parameter
+        name="Include fragment factory method?"
+        default="true"
+        help="Generate static fragment factory method for easy instantiation"
+        id="includeFactory"
+        type="boolean"/>
+
+    <parameter
+        name="View Name"
+        constraints="class|nonempty|unique"
+        default="BlankView"
+        help="The name of the view interface to create"
+        id="viewName"
+        suggest="${underscoreToCamelCase(classToResource(className))}View"
+        type="string"
+        visibility="includeView"/>
+
+    <parameter
+        name="Presenter Name"
+        constraints="class|nonempty|unique"
+        default="BlankPresenter"
+        help="The name of the presenter interface to create"
+        id="presenterName"
+        suggest="${underscoreToCamelCase(classToResource(className))}Presenter"
+        type="string"
+        visibility="includePresenter"/>
+
+    <thumbs>
+        <thumb>template_moxy_fragment.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl"/>
+    <execute file="recipe.xml.ftl"/>
+
+</template>
