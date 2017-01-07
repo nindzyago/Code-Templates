@@ -1,7 +1,7 @@
-package ${packageName}.presentation.presenter${dotSubpackage};
+package ${packageName}.presenters${dotSubpackage};
 
 <#if applicationPackage??>import ${applicationPackage}.R;</#if>
-import ${packageName}.presentation.view${dotSubpackage}.${viewName};
+import ${packageName}.interfaces.views${dotSubpackage}.${viewName};
 import com.arellomobile.mvp.InjectViewState;
 import com.arellomobile.mvp.MvpPresenter;
 

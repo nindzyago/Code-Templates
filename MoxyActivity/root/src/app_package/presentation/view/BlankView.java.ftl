@@ -1,4 +1,4 @@
-package ${packageName}.presentation.view${dotSubpackage};
+package ${packageName}.interfaces.views${dotSubpackage};
 
 import com.arellomobile.mvp.MvpView;
 

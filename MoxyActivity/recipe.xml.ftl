@@ -24,7 +24,7 @@
 
     <#if includePresenter>
     <instantiate from="src/app_package/presentation/presenter/BlankPresenter.java.ftl"
-                   to="${escapeXmlAttribute(srcOut)}presenters/${subpackage}${presenterName}.java" />
+                   to="${escapeXmlAttribute(srcOut)}/presenters/${subpackage}${presenterName}.java" />
 
     <open file="${escapeXmlAttribute(srcOut)}/presentation/presenter/${subpackage}${presenterName}.java" />
     </#if>
