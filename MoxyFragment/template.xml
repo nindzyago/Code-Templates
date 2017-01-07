@@ -41,7 +41,7 @@
         help="Generate a layout XML for the fragment"
         id="includeLayout"
         type="boolean"/>
-    
+
     <parameter
         name="Use ButterKnife?"
         default="true"
