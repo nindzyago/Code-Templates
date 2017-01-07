@@ -7,7 +7,7 @@
     minBuildApi="8"
     revision="1">
 
-    <category value="Moxy"/>
+    <category value="NoNews"/>
 
     <dependency name="android-support-v4" revision="8"/>
 
@@ -26,6 +26,15 @@
         id="useSubPackage"
         type="boolean"
         visibility="false"/>
+
+    <parameter
+        name="Use ButterKnife?"
+        default="true"
+        help="Bind ButterKnife for Fragment"
+        id="useButterKnife"
+        type="boolean"
+        visibility="true"/>
+
 
     <parameter
         name="Package name"

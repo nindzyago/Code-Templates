@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 <#if applicationPackage??>
 import ${applicationPackage}.R;
 </#if>
+<#if useButterKnife>
+import butterknife.ButterKnife;
+</#if>
 import ${packageName}.interfaces.views${dotSubpackage}.${viewName};
 import ${packageName}.R;
 import ${packageName}.presenters${dotSubpackage}.${presenterName};
@@ -39,6 +42,9 @@ public class ${className} extends BaseFragment implements ${viewName} {
             final Bundle savedInstanceState) {
 <#if includeLayout>
         View view = inflater.inflate(LAYOUT, container, false);
+        <#if useButterKnife>
+        ButterKnife.bind(this, view);
+        </#if>
         return view;
 </#if>
     }
