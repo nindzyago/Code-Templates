@@ -8,3 +8,15 @@ This project contains the edited [Moxy](https://github.com/Arello-Mobile/Moxy/tr
 3. Restart Android Studio.
 
 
+
+Select:
+![](https://github.com/NoNews/CodeGeneration/blob/master/images/select.jpg "Select")
+
+Activity:
+![](https://github.com/NoNews/CodeGeneration/blob/master/images/activity.jpg "Activity")
+
+Fragment:
+![](https://github.com/NoNews/CodeGeneration/blob/master/images/fragment.jpg "Fragment")
+
+RecyclerView Adapter:
+![](https://github.com/NoNews/CodeGeneration/blob/master/images/adapter.jpg "RecyclerView adapter")
