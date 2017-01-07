@@ -28,15 +28,6 @@
         visibility="false"/>
 
     <parameter
-        name="Use ButterKnife?"
-        default="true"
-        help="Bind ButterKnife for Fragment"
-        id="useButterKnife"
-        type="boolean"
-        visibility="true"/>
-
-
-    <parameter
         name="Package name"
         default="blank"
         help="Package name"
@@ -50,6 +41,14 @@
         help="Generate a layout XML for the fragment"
         id="includeLayout"
         type="boolean"/>
+    
+    <parameter
+        name="Use ButterKnife?"
+        default="true"
+        help="Bind ButterKnife for Fragment"
+        id="useButterKnife"
+        type="boolean"
+        visibility="true"/>
 
     <parameter
         name="Create View?"

@@ -2,7 +2,7 @@
 <template
     format="4"
     revision="1"
-    name="RecyclerView Adapter"
+    name="RecyclerView Adapter constructor"
     description="Adapter and ViewHolder template"
     minApi="7"
     minBuildApi="14">
@@ -26,6 +26,15 @@
         help="The name of the ViewHolder class to create" />
 
     <parameter
+        id="layoutName"
+        name="Adapter layout name"
+        type="string"
+        constraints="layout|nonempty"
+        default="item_layout"
+        help="Layout will be created" />
+
+
+    <parameter
         name="Use ButterKnife?"
         default="true"
         help="Bind ButterKnife for View holder"
@@ -34,15 +43,6 @@
         visibility="true"/>
 
 
-    <parameter
-        id="layoutName"
-        name="Layout for adapter"
-        type="string"
-        constraints="layout|nonempty"
-        default="item_layout"
-        help="Layout will be created" />
-
-   
     <!-- 128x128 thumbnails relative to template.xml -->
     <thumbs>
         <!-- default thumbnail is required -->

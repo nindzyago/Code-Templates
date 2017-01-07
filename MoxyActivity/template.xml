@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template
     name="Moxy activity"
-    description="MVP activity constructor"
+    description="Moxy MVP activity constructor"
     format="4"
     minApi="7"
     minBuildApi="8"
@@ -27,13 +27,6 @@
         type="boolean"
         visibility="false"/>
 
-    <parameter
-        name="Use ButterKnife?"
-        default="true"
-        help="Bind ButterKnife for Activity"
-        id="useButterKnife"
-        type="boolean"
-        visibility="true"/>
 
     <parameter
         name="Package name"
@@ -49,6 +42,14 @@
         help="Generate a layout XML for the activity"
         id="includeLayout"
         type="boolean"/>
+
+    <parameter
+        name="Use ButterKnife?"
+        default="true"
+        help="Bind ButterKnife for Activity"
+        id="useButterKnife"
+        type="boolean"
+        visibility="true"/>
 
     <parameter
         name="Create View?"
