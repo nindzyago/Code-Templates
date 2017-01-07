@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="1"
+    name="RecyclerView Adapter"
+    description="Adapter and ViewHolder template"
+    minApi="7"
+    minBuildApi="14">
+
+    <category value="NoNews" />
+
+	 <parameter
+        id="adapterClass"
+        name="Adapter Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MyAdapter"
+        help="The name of the Adapter class to create" />
+	
+	<parameter
+        id="itemClass"
+        name="ViewHolder name"
+        type="string"
+        constraints="class|nonempty"
+        default="ViewHolder"
+        help="The name of the ViewHolder class to create" />
+
+    <parameter
+        name="Use ButterKnife?"
+        default="true"
+        help="Bind ButterKnife for View holder"
+        id="useButterKnife"
+        type="boolean"
+        visibility="true"/>
+
+
+    <parameter
+        id="layoutName"
+        name="Layout for adapter"
+        type="string"
+        constraints="layout|nonempty"
+        default="item_layout"
+        help="Layout will be created" />
+
+   
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>templates_adapter.png</thumb>
+    </thumbs>
+
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
