@@ -42,13 +42,9 @@
         type="boolean"
         visibility="true"/>
 
-
-    <!-- 128x128 thumbnails relative to template.xml -->
     <thumbs>
-        <!-- default thumbnail is required -->
         <thumb>templates_adapter.png</thumb>
     </thumbs>
-
 
     <globals file="globals.xml.ftl" />
     <execute file="recipe.xml.ftl" />
