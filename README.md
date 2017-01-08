@@ -24,8 +24,8 @@ This project contains the edited [Moxy](https://github.com/Arello-Mobile/Moxy/tr
 
 
 ####License
-
-Copyright 2017  Alex Bykov
+```
+Copyright 2017 Alex Bykov
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
