@@ -18,8 +18,7 @@ import ${packageName}.App;
 
 import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.arellomobile.mvp.presenter.ProvidePresenter;
-import com.arellomobile.mvp.MvpFragment;
-import com.arellomobile.mvp.presenter.InjectPresenter;
+
 
 public class ${className} extends BaseFragment implements ${viewName} {
 
@@ -31,7 +30,7 @@ public class ${className} extends BaseFragment implements ${viewName} {
 
      @ProvidePresenter
       ${presenterName} provide${presenterName}() {
-            return App.getAppComponent().get${presenterName};
+            return App.getAppComponent().get${presenterName}();
         }
 
 <#if includeFactory>

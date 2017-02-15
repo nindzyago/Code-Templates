@@ -18,6 +18,9 @@ import ${applicationPackage}.R;
 </#if>
 
 import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.arellomobile.mvp.presenter.ProvidePresenter;
+import ${packageName}.App;
+
 
 public class ${className} extends BaseActivity implements ${viewName} {
 
@@ -26,6 +29,12 @@ public class ${className} extends BaseActivity implements ${viewName} {
     //@formatter:off
 	@InjectPresenter	${presenterName} m${presenterName};
     //@formatter:on
+
+    @ProvidePresenter
+    ${presenterName} provide${presenterName}() {
+     return App.getAppComponent().get${presenterName}();
+     }
+
 
 	<#if includeFactory>
     public static Intent getIntent(final Context context) {
