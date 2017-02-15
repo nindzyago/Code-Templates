@@ -14,7 +14,10 @@ import ${packageName}.interfaces.views${dotSubpackage}.${viewName};
 import ${packageName}.R;
 import ${packageName}.presenters${dotSubpackage}.${presenterName};
 import ${packageName}.fragments.BaseFragment;
+import ${packageName}.App;
 
+import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.arellomobile.mvp.presenter.ProvidePresenter;
 import com.arellomobile.mvp.MvpFragment;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 
@@ -25,6 +28,11 @@ public class ${className} extends BaseFragment implements ${viewName} {
 	//@formatter:off
 	@InjectPresenter	${presenterName} m${presenterName};
 	//@formatter:on
+
+     @ProvidePresenter
+      ${presenterName} provide${presenterName}() {
+            return App.getAppComponent().get${presenterName};
+        }
 
 <#if includeFactory>
     public static ${className} newInstance() {
