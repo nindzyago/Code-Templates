@@ -45,7 +45,7 @@
 
     <parameter
         name="Use ButterKnife?"
-        default="true"
+        default="false"
         help="Bind ButterKnife for Activity"
         id="useButterKnife"
         type="boolean"
