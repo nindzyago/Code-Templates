@@ -26,15 +26,12 @@ public class ${className} extends BaseActivity implements ${viewName} {
 
     private static final int LAYOUT = R.layout.${activityName};
 
-    //@formatter:off
 	@InjectPresenter	${presenterName} m${presenterName};
-    //@formatter:on
 
     @ProvidePresenter
     ${presenterName} provide${presenterName}() {
      return App.getAppComponent().get${presenterName}();
      }
-
 
 	<#if includeFactory>
     public static Intent getIntent(final Context context) {

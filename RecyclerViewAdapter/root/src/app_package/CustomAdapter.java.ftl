@@ -23,7 +23,7 @@ public class ${adapterClass} extends RecyclerView.Adapter<${adapterClass}.${item
     }
 
     @Override
-    public void onBindViewHolder(${itemClass} itemViewHolder, int position) {
+    public void onBindViewHolder(${itemClass} holder, int position) {
 
     }
 
