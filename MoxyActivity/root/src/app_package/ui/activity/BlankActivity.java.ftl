@@ -26,7 +26,7 @@ public class ${className} extends BaseActivity implements ${viewName} {
 
     private static final int LAYOUT = R.layout.${activityName};
 
-	@InjectPresenter	${presenterName} ${"presenterName"?uncap_first};
+	@InjectPresenter	${presenterName} ${presenterName?uncap_first};
 
     @ProvidePresenter
     ${presenterName} provide${presenterName}() {
