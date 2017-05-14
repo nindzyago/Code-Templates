@@ -24,7 +24,7 @@ public class ${className} extends BaseFragment implements ${viewName} {
 
     private static final int LAYOUT = R.layout.${fragmentName};
 
-	@InjectPresenter	${presenterName}  ${"presenterName"?uncap_first};
+	@InjectPresenter	${presenterName}  ${resenterName?uncap_first};
 
      @ProvidePresenter
       ${presenterName} provide${presenterName}() {
@@ -46,11 +46,11 @@ public class ${className} extends BaseFragment implements ${viewName} {
     public View onCreateView(final LayoutInflater inflater, final   ViewGroup container,
             final Bundle savedInstanceState) {
 <#if includeLayout>
-        View view = inflater.inflate(LAYOUT, container, false);
+        rootView = inflater.inflate(LAYOUT, container, false);
         <#if useButterKnife>
         ButterKnife.bind(this, view);
         </#if>
-        return view;
+        return rootView;
 </#if>
     }
 
