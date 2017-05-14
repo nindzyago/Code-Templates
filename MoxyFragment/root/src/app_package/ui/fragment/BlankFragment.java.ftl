@@ -24,7 +24,7 @@ public class ${className} extends BaseFragment implements ${viewName} {
 
     private static final int LAYOUT = R.layout.${fragmentName};
 
-	@InjectPresenter	${presenterName}  ${resenterName?uncap_first};
+	@InjectPresenter	${presenterName}  ${presenterName?uncap_first};
 
      @ProvidePresenter
       ${presenterName} provide${presenterName}() {
