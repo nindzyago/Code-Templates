@@ -27,7 +27,6 @@
         type="boolean"
         visibility="false"/>
 
-
     <parameter
         name="Package name"
         default="blank"
@@ -43,13 +42,13 @@
         id="includeLayout"
         type="boolean"/>
 
-    <parameter
-        name="Use ButterKnife?"
-        default="false"
-        help="Bind ButterKnife for Activity"
-        id="useButterKnife"
-        type="boolean"
-        visibility="true"/>
+    <!--<parameter-->
+        <!--name="Use ButterKnife?"-->
+        <!--default="false"-->
+        <!--help="Bind ButterKnife for Activity"-->
+        <!--id="useButterKnife"-->
+        <!--type="boolean"-->
+        <!--visibility="true"/>-->
 
     <parameter
         name="Create View?"
@@ -84,20 +83,20 @@
         type="string"
         visibility="includeLayout"/>
 
-    <parameter
-        name="Include activity factory method?"
-        default="true"
-        help="Generate static activity factory method for easy instantiation"
-        id="includeFactory"
-        type="boolean"/>
+    <!--<parameter-->
+        <!--name="Include activity factory method?"-->
+        <!--default="true"-->
+        <!--help="Generate static activity factory method for easy instantiation"-->
+        <!--id="includeFactory"-->
+        <!--type="boolean"/>-->
 
     <parameter
-        name="View Name"
+        name="Contract Name"
         constraints="class|nonempty|unique"
-        default="BlankView"
+        default="BlankContract"
         help="The name of the view interface to create"
         id="viewName"
-        suggest="${underscoreToCamelCase(classToResource(className))}View"
+        suggest="${underscoreToCamelCase(classToResource(className))}Contract"
         type="string"
         visibility="includeView"/>
 

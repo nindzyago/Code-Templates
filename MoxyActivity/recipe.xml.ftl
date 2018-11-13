@@ -8,16 +8,16 @@
         <open file="${escapeXmlAttribute(resOut)}/layout/${escapeXmlAttribute(activityName)}.xml" />
     </#if>
 
-    <open file="${escapeXmlAttribute(srcOut)}/activities/${subpackage}${className}.java" />
+    <open file="${escapeXmlAttribute(srcOut)}/views/activities/${subpackage}${className}.java" />
 
     <instantiate from="src/app_package/ui/activity/BlankActivity.java.ftl"
-                   to="${escapeXmlAttribute(srcOut)}/activities/${subpackage}${className}.java" />
+                   to="${escapeXmlAttribute(srcOut)}/views/activities/${subpackage}${className}.java" />
 
     <#if includeView>
     <instantiate from="src/app_package/presentation/view/BlankView.java.ftl"
-                   to="${escapeXmlAttribute(srcOut)}/interfaces/views/${subpackage}${viewName}.java" />
+                   to="${escapeXmlAttribute(srcOut)}/contracts/${subpackage}${viewName}.java" />
 
-    <open file="${escapeXmlAttribute(srcOut)}/interfaces/views/${subpackage}${viewName}.java" />
+    <open file="${escapeXmlAttribute(srcOut)}/contracts/${subpackage}${viewName}.java" />
     </#if>
 
     <#if includePresenter>
